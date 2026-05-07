@@ -7,9 +7,10 @@
         <title>Portfolio</title>
         <script src="bootstrap-5.3.8/js/bootstrap.js"></script>
         <link href="bootstrap-5.3.8/css/bootstrap.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
     </head>
 
-    <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <body class="">
 
         <!-- start navbar -->
          <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline border-bottom border-2" id="navbar">
@@ -35,11 +36,22 @@
         </nav>
         <!-- end navbar -->
 
-        <!-- présentation -->
-        <div class="row" id="presentation">
+        <div class="container-fluid" id="corps" data-bs-spy="scroll" data-bs-target="#navbar">
+            <!-- présentation -->
+            <div class="row justify-content-around text-center p-5" id="presentation">
 
+                <div class="col-10 col-md-5 p-3 mb-md-0 mb-3 bg-opacity-75 bg-dark rounded align-self-center">                       
+                    <span class="fs-3">Terence Martinant</span>
+                </div>
+
+                <div class="col-10 col-md-5 p-3 bg-opacity-75 bg-dark rounded align-self-center">
+                    <span class="fs-3">lorem ipsum tamer lorem ipsum tamer lorem ipsum tamer</span>
+                </div>
+
+            </div>
+            <!-- fin présentation -->
         </div>
-        <!-- fin présentation -->
+
     </body>
 
 </html>

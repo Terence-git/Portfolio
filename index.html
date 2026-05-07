@@ -9,9 +9,10 @@
         <link href="bootstrap-5.3.8/css/bootstrap.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#navbar">
+
         <!-- start navbar -->
-         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline">
+         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Présentation</a>
+                            <a class="nav-link" aria-current="page" href="#presentation">Présentation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Mes compétences</a>
@@ -33,6 +34,12 @@
             </div>
         </nav>
         <!-- end navbar -->
+
+        <!-- présentation -->
+        <div class="row" id="presentation">
+
+        </div>
+        <!-- fin présentation -->
     </body>
 
 </html>

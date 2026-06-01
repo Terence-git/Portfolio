@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Téléchargement</title>
+</head>
+<body>
+
+<script>
+window.onload = function() {
+    const a = document.createElement('a');
+    a.href = 'Test Fonctionnels DemandeProjetDSN.xlsx';
+    a.download = 'Test Fonctionnels DemandeProjetDSN.xlsx';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+};
+</script>
+
+</body>
+</html>

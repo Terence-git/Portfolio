@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Téléchargement</title>
+</head>
+<body>
+
+<script>
+window.onload = function() {
+    const a = document.createElement('a');
+    a.href = 'EXPORT_PROJET.csv';
+    a.download = 'EXPORT_PROJET.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+};
+</script>
+
+</body>
+</html>

@@ -1,91 +1,249 @@
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SLAM</title>
 
-        <script src="bootstrap-5.3.8/js/bootstrap.js"></script>
-        <script src="fontawesome-7.2.0/js/all.js"></script>
+    <link href="bootstrap-5.3.8/css/bootstrap.css" rel="stylesheet">
+    <link href="fontawesome-7.2.0/css/all.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/tm.jpg">
+</head>
 
-        <link href="bootstrap-5.3.8/css/bootstrap.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="images/tm.jpg">
-
-    </head>
-
-    <body class="">
-
-        <!-- start navbar -->
-         <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline border-bottom border-2 sticky-top" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#presentation">Présentation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">A propos de moi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#competences">Mes compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certifications">Mes certifications</a>
-                        </li>
-                    </ul>
-                </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-2 shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#presentation">Terence Martinant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#presentation">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- end navbar -->
+        </div>
+    </nav>
 
-        <div class="container-fluid" id="corps" data-bs-spy="scroll" data-bs-target="#navbar">
-
-            <!-- présentation -->
-            <div class="row justify-content-around text-center p-5" id="presentation">
-
-                <div class="col-10 col-md-5 p-3 mb-md-0 mb-3 bg-opacity-75 bg-dark rounded align-self-center">                       
-                    <span class="fs-3">Terence Martinant</span>
-                </div>
-
-                <div class="col-10 col-md-5 p-3 bg-opacity-75 bg-dark rounded align-self-center">
-                    <span class="fs-3">lorem ipsum tamer lorem ipsum tamer lorem ipsum tamer</span>
-                </div>
-
-            </div>
-            <!-- fin présentation -->
-
-            <!-- about -->
-            <div class="row py-3 px-5 justify-content-center" id="about">
-                <div class="col">
-
-                    <div class="row mb-2 text-center text-md-start">
-                        <span class="fs-2">
-                            <i class="fa-solid fa-camera"></i>
-                            A propos de moi
-                        </span>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 border-2 border border-warning rounded p-3">
-                            <span>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id odio paretra, dapibus nisl et, rhoncus ante. Vestibulum vehicula, orci auctor congue consequat, mauris quam elementum diam, ut rutrum dolor augue id ligula. Mauris id elementum velit. Aliquam eu sagittis nibh. Phasellus ullamcorper neque quis fringilla rutrum. Suspendisse sollicitudin, tortor nec mattis malesuada, magna lorem ullamcorper arcu, ut finibus lectus nibh sed risus.
-                            </span>
+    <main>
+        <section id="presentation" class="hero-section text-white d-flex align-items-center">
+            <div class="container py-5">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <span class="badge bg-warning text-dark mb-3">BTS SIO - option SLAM</span>
+                        <h1 class="display-5 fw-bold">Terence Martinant</h1>
+                        <p class="lead">Étudiant en BTS Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métier. Je construis des applications web modernes et des solutions numériques sécurisées.</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-warning btn-lg me-2">Me contacter</a>
+                            <a href="#projets" class="btn btn-outline-light btn-lg">Voir mes projets</a>
                         </div>
                     </div>
-
+                    <div class="col-lg-5 text-center">
+                        <div class="profile-card mx-auto">
+                            <div class="profile-image rounded-circle bg-warning shadow-lg"></div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-            <!-- end about -->
+        </section>
 
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h2 class="fw-bold">À propos de moi</h2>
+                        <p class="text-muted">Une présentation claire de mon parcours et de mes objectifs professionnels.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm h-100 border-warning">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Qui je suis</h3>
+                                <p>Je suis étudiant en BTS SIO, spécialité SLAM. Je conçois des sites web, des applications métiers et des services numériques pour les entreprises en m'appuyant sur les meilleures pratiques du développement.</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fa-solid fa-circle-check text-warning me-2"></i>Formation axée sur le développement et la programmation</li>
+                                    <li><i class="fa-solid fa-circle-check text-warning me-2"></i>Connaissance de HTML, CSS, JavaScript, PHP et SQL</li>
+                                    <li><i class="fa-solid fa-circle-check text-warning me-2"></i>Méthodes agiles et travail en équipe</li>
+                                    <li><i class="fa-solid fa-circle-check text-warning me-2"></i>Création de solutions adaptées aux besoins métier</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm h-100 border-light bg-dark text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Mon objectif</h3>
+                                <p>Apporter une valeur réelle à un projet en développant des applications robustes, faciles à utiliser et maintenables. Mon but est de devenir un développeur web capable de transformer une idée en solution opérationnelle.</p>
+                                <div class="row text-center mt-4">
+                                    <div class="col-6 mb-3">
+                                        <span class="d-block fs-4 fw-bold">BTS</span>
+                                        <span>Services Informatiques aux Organisations</span>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <span class="d-block fs-4 fw-bold">SLAM</span>
+                                        <span>Solutions Logicielles et Applications Métier</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row mb-4 text-center">
+                    <div class="col-lg-10 mx-auto">
+                        <h2 class="fw-bold">Compétences</h2>
+                        <p class="text-muted">Mes domaines de compétences techniques et méthodologiques pour le BTS SIO SLAM.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Développement web</h3>
+                                <p>HTML, CSS, JavaScript, Bootstrap, PHP, projets responsive et accessibles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Base de données</h3>
+                                <p>Conception et gestion de bases de données MySQL, requêtes SQL, normalisation et sécurité.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Méthodes agiles</h3>
+                                <p>Gestion de projet, organisation par sprints, communication avec l'équipe et livraisons fréquentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Qualité logicielle</h3>
+                                <p>Tests, documentation, normes de codage et maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Outils professionnels</h3>
+                                <p>Git, GitHub, Visual Studio Code, intégration continue et déploiement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 card-hover border-warning bg-secondary text-white">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Sécurité</h3>
+                                <p>Protection des données, validation des entrées utilisateur et bonnes pratiques de développement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="py-5">
+            <div class="container">
+                <div class="row mb-4 text-center">
+                    <div class="col-lg-10 mx-auto">
+                        <h2 class="fw-bold">Projets</h2>
+                        <p class="text-muted">Exemples de projets réalisés dans le cadre de mon BTS SIO SLAM.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5">Application de gestion</h3>
+                                <p>Application web pour gérer les clients, les ventes et les statistiques d'une petite entreprise.</p>
+                                <p class="mb-0"><strong>Technologies :</strong> PHP, MySQL, Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5">Site professionnel</h3>
+                                <p>Site vitrine responsive pour présenter une association ou un service local.</p>
+                                <p class="mb-0"><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5">Outil collaboratif</h3>
+                                <p>Prototype d'outil métier avec authentification et gestion des droits utilisateurs.</p>
+                                <p class="mb-0"><strong>Technologies :</strong> PHP, SQL, API REST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold">Contact</h2>
+                        <p>Je suis disponible pour des stages, des projets ou des missions en développement web et applications métier.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-envelope text-warning me-2"></i>terence.martinant@gmail.com</li>
+                            <li><i class="fa-solid fa-phone text-warning me-2"></i>07 81 01 48 61</li>
+                            <li><i class="fa-solid fa-graduation-cap text-warning me-2"></i>BTS SIO SLAM</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-warning bg-secondary text-white shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 mb-3">Envie de collaborer ?</h3>
+                                <p>Je peux vous aider à concevoir, développer et déployer un site ou une application métier adaptée à vos besoins.</p>
+                                <a href="mailto:terence.martinant@gmail.com" class="btn btn-warning">Me proposer un projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 text-center bg-body-tertiary">
+        <div class="container">
+            <span class="text-muted">© 2026 Terence Martinant - BTS SIO SLAM</span>
         </div>
+    </footer>
 
-    </body>
+    <script src="bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome-7.2.0/js/all.min.js"></script>
+</body>
 
 </html>
